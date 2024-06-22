@@ -1,7 +1,7 @@
 <?php
-
-if(isset($_COOKIE['session'])){
+session_start();
+if(isset($_SESSION['SESS_ID'])){
     header("Location: public/dashboard.php");
 }else{
-    header("Location: public/index.php");
+    header("Location: public/login.php");
 }

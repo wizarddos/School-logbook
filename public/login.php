@@ -1,6 +1,11 @@
 <?php
     session_start();
     require_once "../lang/en.php";
+
+    if(isset($_SESSION['SESS_ID'])){
+        header("Location: public/dashboard.php");
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +25,8 @@
         <label class = "label"><?= $lang['Login']['password'] ?></label><br/>
         <input type="password" placeholder="<?= $lang['Login']['password'] ?> " name="password" required><br><br>
         
+        <input type="hidden" name="uri" value="<?php echo  $_SERVER['PHP_SELF']; ?>">
+
         <button type="submit" class = "login-button"><?= $lang['Login']['submit'] ?></button>
     </form>
 </body>
