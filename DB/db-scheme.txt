@@ -1,0 +1,95 @@
+Config
+|_ conf_id (INT)
+|_ conf_name (VARCHAR)
+|_ conf_value (VARCHAR)
+|_ conf_mod_date (DATETIME)
+
+Users
+|_ id (INT)
+|_ username (VARCHAR)
+|_ password (VARCHAR)
+|_ role (INT)
+|_ name (VARCHAR)
+|_ surname (VARCHAR)
+|_ birth_date (DATETIME)
+
+Classes
+|_ class_id (INT)
+|_ class_num (VARCHAR)
+|_ class_teacher (INT)
+
+ClassStudents
+|_ class_id (INT)
+|_ student_id (INT)
+
+Grades
+|_ grade_id (INT)
+|_ grade_value (INT)
+|_ grade_student (INT)
+|_ grade_teacher (INT)
+|_ subject_id (INT)
+
+Attendance
+|_ attendance_id (INT)
+|_ att_student (INT)
+|_ att_type (ENUM)
+|_ att_date (DATETIME)
+|_ att_lesson (INT)
+
+Messages
+|_ mess_id (INT)
+|_ mess_title (VARCHAR)
+|_ mess_text (TEXT)
+|_ mess_sender (INT)
+|_ mess_reciever (INT)
+|_ mess_sent (DATETIME)
+
+Announcments
+|_ ann_id (INT)
+|_ ann_title (VARCHAR)
+|_ ann_text (TEXT)
+|_ ann_sender (INT)
+|_ ann_created (DATETIME)
+
+Timetable
+|_ timetable_id (INT)
+|_ class_id (INT)
+|_ class_subject (INT)
+|_ class_hour (INT)
+|_ class_day (INT)
+|_ class_teacher_id (INT)
+
+Tests
+|_ test_id (INT)
+|_ test_subject (INT)
+|_ test_for (INT)
+|_ test_by (INT)
+|_ test_hour (INT)
+|_ test_date (DATETIME)
+|_ test_title (VARCHAR)
+|_ test_desc (TEXT)
+
+Homeworks
+|_ homework_id (INT)
+|_ homework_title (VARCHAR)
+|_ homework_description (TEXT)
+|_ homework_due (DATETIME)
+|_ homework_subject (INT)
+|_ homework_teacher_id (INT)
+
+Subjects
+|_ subject_id (INT)
+|_ subject_name_id (INT)
+
+SubjectNames
+|_ name_id (INT)
+|_ language_code (VARCHAR)
+|_ subject_name (VARCHAR)
+
+LessonPlans
+|_ lesson_id (INT)
+|_ class_id (INT)
+|_ subject_id (INT)
+|_ teacher_id (INT)
+|_ day (INT)
+|_ hour (INT)

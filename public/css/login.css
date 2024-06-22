@@ -1,0 +1,28 @@
+@import url(colors.css);
+*{
+    font-size: xx-large;
+}
+
+body{
+    background-color: var(--secondary-col);
+}
+
+.method{
+    width: 30%;
+    margin: 10% auto;
+    padding: 2%;
+
+    color: var(--first-col);
+    background-color: var(--fifth-col);
+}
+
+.label{
+    text-align: left;
+}
+
+.login-button{
+    width: 50%;
+    background-color: var(--fourth-col);
+    border-radius: 5px;
+    border: 1px var(--secondary-col) solid;
+}

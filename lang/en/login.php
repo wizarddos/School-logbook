@@ -1,5 +1,4 @@
 <?php
-require "en/login.php";
 
 $login = [
     'heading' => "Log into your account",
