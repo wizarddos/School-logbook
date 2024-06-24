@@ -3,7 +3,7 @@
     require_once "../lang/en.php";
 
     if(isset($_SESSION['SESS_ID'])){
-        header("Location: public/dashboard.php");
+        header("Location: dashboard.php");
     }
 
 ?>
@@ -13,6 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>LogBook - login page</title>
 </head>
 <body>

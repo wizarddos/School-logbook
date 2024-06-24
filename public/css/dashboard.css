@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidenav{
+    height: 100%;
+    width: 20%;
+    padding: 2%;
+    background-color: var(--third-col);
+}

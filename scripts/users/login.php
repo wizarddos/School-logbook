@@ -4,7 +4,7 @@ session_start();
 
 function login($a_username, $a_password){
 
-    require_once "conf.php";
+    require_once "../conf.php";
 
 
     $login = htmlentities($a_username, ENT_QUOTES, "UTF-8");
@@ -45,6 +45,7 @@ function login($a_username, $a_password){
     }
 
     $_SESSION['SESS_ID'] = random_bytes(32);
+    $_SESSION['role'] = $result['role'];
     return 1;
 
 }

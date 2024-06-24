@@ -1,11 +1,4 @@
 @import url(colors.css);
-*{
-    font-size: xx-large;
-}
-
-body{
-    background-color: var(--secondary-col);
-}
 
 .method{
     width: 30%;
