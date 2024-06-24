@@ -1,0 +1,8 @@
+@import url(colors.css);
+body{
+    background-color: var(--fifth-col);
+}
+
+.table{
+    border-spacing: 1em;
+}
