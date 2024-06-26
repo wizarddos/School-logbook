@@ -29,6 +29,12 @@
         <input type="hidden" name="uri" value="<?php echo  $_SERVER['PHP_SELF']; ?>">
         <button type="submit"><?= $lang['Dashboard']['add-user'] ?></button>
     </form>
+    <br/><br/>
+    <form action="../../../controlers/admin.php" method="post">
+        <input type = "number" name = "id" placeholder="<?= $lang['Dashboard']['id']; ?>">
+        <input type="hidden" name="uri" value="<?php echo  $_SERVER['PHP_SELF']."/del-user.php"; ?>">
+        <button type="submit"><?= $lang['Dashboard']['del-user'] ?></button>
+    </form>
     <?php
         if(isset($_SESSION['info'])){
             echo $_SESSION['info'];

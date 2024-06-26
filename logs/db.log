@@ -3,4 +3,9 @@ Stack trace:
 #0 D:\xampp\htdocs\School-logbook\scripts\query.php(14): PDOStatement->execute(Array)
 #1 D:\xampp\htdocs\School-logbook\scripts\admin\addUser.php(15): runQuery('INSERT INTO `us...', Array)
 #2 D:\xampp\htdocs\School-logbook\controlers\admin.php(13): addUser(Array)
+#3 {main}PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in D:\xampp\htdocs\School-logbook\scripts\query.php:14
+Stack trace:
+#0 D:\xampp\htdocs\School-logbook\scripts\query.php(14): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\School-logbook\scripts\admin\addUser.php(18): runQuery('INSERT INTO `us...', Array)
+#2 D:\xampp\htdocs\School-logbook\controlers\admin.php(13): addUser(Array)
 #3 {main}
