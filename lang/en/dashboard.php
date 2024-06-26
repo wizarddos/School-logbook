@@ -11,6 +11,7 @@ $dashboard = [
 
     'frame-users' => "Database Users",
     'frame-config' => "App Configuration",
+    'frame-display' => "Display table",
 
     'add-user' => "Add user",
     'del-user' => "Delete user",
@@ -27,5 +28,8 @@ $dashboard = [
     'surname' => 'Surname',
 
     'value' => "Field value",
-    'change-config' => "Change config"
+    'change-config' => "Change config",
+
+    'table-name' => "Table name",
+    'display-table' => 'Display table',
 ];
