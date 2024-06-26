@@ -2,7 +2,7 @@
 require_once "../scripts/query.php";
 
 function addUser($args){
-    $sql = "INSERT INTO `users` VALUES(???????)";
+    $sql = "INSERT INTO `users` VALUES(?, ?, ?, ?, ?, ?, ?)";
 
     $clean = [];
     foreach($args as $arg){

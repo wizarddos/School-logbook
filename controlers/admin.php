@@ -9,8 +9,8 @@ $path = htmlentities($args['uri'], ENT_QUOTES, "UTF-8");
 $route = explode("/", $path);
 
 switch(end($route)){
-    case "user.php": 
+    case "users.php": 
         addUser($args); 
-        //TODO: Fix that
         break;
+    default: echo "No route specified"; break;
 }

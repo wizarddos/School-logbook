@@ -16,6 +16,7 @@ function runQuery(string $query, array $arg = []){
         $db = null;
         return $result;
     }catch(PDOException $e){
+        file_put_contents("../logs/db.log", $e, FILE_APPEND);
         return ['error' => $e->getMessage()];
     }
 }
