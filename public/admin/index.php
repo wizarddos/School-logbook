@@ -37,7 +37,11 @@
         <a href = "../logout.php">Log out</a>
     </nav>
     <main>
-        <iframe src="dash-elements/users.php" frameborder="0" class = "frame"></iframe>
+        <?php
+            $tab = isset($_GET['tab']) ? htmlentities( $_GET['tab'] ) : 'users';
+
+            echo "<iframe src=\"dash-elements/$tab.php\" frameborder=\"0\" class = \"frame\"></iframe>";
+        ?>
     </main>
     <script src="../js/change-tabs.js"></script>
 </body>

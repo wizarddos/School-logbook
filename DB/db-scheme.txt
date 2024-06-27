@@ -85,11 +85,3 @@ SubjectNames
 |_ name_id (INT)
 |_ language_code (VARCHAR)
 |_ subject_name (VARCHAR)
-
-LessonPlans
-|_ lesson_id (INT)
-|_ class_id (INT)
-|_ subject_id (INT)
-|_ teacher_id (INT)
-|_ day (INT)
-|_ hour (INT)

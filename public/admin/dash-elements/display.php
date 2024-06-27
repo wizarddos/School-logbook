@@ -30,9 +30,29 @@
         {
             $name = htmlentities($_POST['table-name'], ENT_QUOTES, "UTF-8");
             $sql = "SELECT * FROM `".$name."`";
-            $result = runQuery($sql);
-    
-            generateTable($result);
+            $tables = [
+                'users',
+                'config',
+                'classes',
+                'classStudents',
+                'grades',
+                'attendance',
+                'messages',
+                'announcments',
+                'timetable',
+                'tests',
+                'homeworks',
+                'subjects',
+                'subjectnames'
+            ];
+
+            if(in_array($name, $tables)){
+                $result = runQuery($sql);
+        
+                generateTable($result);
+            }else{
+                echo "<p class='error'>Table does not exist</p>";
+            }
         }
 
         

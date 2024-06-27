@@ -12,6 +12,7 @@ $dashboard = [
     'frame-users' => "Database Users",
     'frame-config' => "App Configuration",
     'frame-display' => "Display table",
+    'frame-backup' => "Backup Settings",
 
     'add-user' => "Add user",
     'del-user' => "Delete user",
@@ -32,4 +33,6 @@ $dashboard = [
 
     'table-name' => "Table name",
     'display-table' => 'Display table',
+
+    'export' => "Export",
 ];
